@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flags</title>
+  <link rel="stylesheet" href="./css/myStyle.css">
+    <link rel="stylesheet" href="./css/dropList.css">
+    <style>
+        @font-face { font-family: "Nunito Sans"; src: url(./font/NunitoSans-Regular.ttf); }
+        h1 {
+            font-family: JuneBug
+        }
+    </style>
+</head>
+<body>
+<header>
+
+ <p id="pageTitle">Where in the world?</p>
+    <div id="darkMode">
+        <img id="moonIcon" src="icons/moon-outline.svg" alt="dark mode">
+    <p id="dm">Dark Mode</p>
+    </div>
+
+</header>
+<main>
+
+<section id="searchBar">
+<span id="search">
+    <img id="searchIcon" src="icons/search-outline.svg" alt="search">
+    <p>Search for a country...</p>
+
+</span>
+
+    <div class="dropdown">
+        <button class="dropbtn">Filter by Region&#9660;</button>
+        <div class="dropdown-content">
+            <a href="#">Africa</a>
+            <a href="#">America</a>
+            <a href="#">Asia</a>
+            <a href="#">Europe</a>
+            <a href="#">Oceania</a>
+
+        </div>
+    </div>
+</section>
+<section class="grid">
+    <article class="flag">
+        <img class="country" src="flags/de.svg" alt="Germany">
+        <div class="info">
+            <p class="countryName">Germany</p>
+            <span><b>Population: </b>81,770,900</span><br>
+            <span><b>Region: </b>Europe</span><br>
+            <span><b>Capital: </b>Berlin</span>
+        </div>
+    </article>
+    <article class="flag">
+        <img class="country" src="flags/us.svg" alt="USA">
+        <div class="info">
+            <p class="countryName">United States of America</p>
+            <span><b>Population: </b>323,947,000 </span><br>
+            <span><b>Region: </b>Americas</span><br>
+            <span><b>Capital: </b>Washington, D.C.</span>
+        </div>
+    </article>
+
+    <article class="flag">
+        <img class="country" src="flags/br.svg" alt="Brazil">
+        <div class="info">
+            <p class="countryName">Brazil</p>
+            <span><b>Population: </b>206,135,893</span><br>
+            <span><b>Region: </b>Americas</span><br>
+            <span><b>Capital: </b>Brasilia</span>
+        </div>
+    </article>
+    <article class="flag">
+        <img class="country" src="flags/is.svg" alt="Iceland">
+        <div class="info">
+            <p class="countryName">Iceland</p>
+            <span><b>Population: </b>334,300</span><br>
+            <span><b>Region: </b>Europe</span><br>
+            <span><b>Capital: </b>Reykjavík</span>
+        </div>
+    </article>
+
+    <article class="flag">
+        <img class="country" src="flags/af.svg" alt="Afghanistan">
+        <div class="info">
+            <p class="countryName">Afghanistan</p>
+            <span><b>Population: </b>27,657,145</span><br>
+            <span><b>Region: </b>Asia</span><br>
+            <span><b>Capital: </b>Kabul</span>
+        </div>
+    </article>
+    <article class="flag">
+        <img class="country" src="flags/ax.svg" alt="Åland Islands">
+        <div class="info">
+            <p class="countryName">Åland Islands</p>
+            <div class="subInfo">
+            <span><b>Population: </b>81,770,900</span><br>
+            <span><b>Region: </b>Europe</span><br>
+            <span><b>Capital: </b>Berlin</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="flag">
+        <img class="country" src="flags/al.svg" alt="Albania">
+        <div class="info">
+            <p class="countryName">Albania</p>
+            <span><b>Population: </b>2,886,026</span><br>
+            <span><b>Region: </b>Europe</span><br>
+            <span><b>Capital: </b>Tirana</span>
+        </div>
+    </article>
+
+    <article class="flag">
+        <img class="country" src="flags/dz.svg" alt="Algeria">
+        <div class="info">
+            <p class="countryName">Algeria</p>
+            <span><b>Population: </b>40,400,000</span><br>
+            <span><b>Region: </b>Africa</span><br>
+            <span><b>Capital: </b>Algiers</span>
+        </div>
+    </article>
+</section>
+</main>
+</body>
+</html>
