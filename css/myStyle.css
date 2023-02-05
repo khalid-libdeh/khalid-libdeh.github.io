@@ -1,0 +1,284 @@
+
+html, body {
+
+    margin:0;
+    padding: 0;
+    background-color:  #fafafa;
+    font-family: "Nunito Sans";
+
+}
+.country {
+    float: left;
+    min-width:  100px;
+    min-height: 100px;
+    object-fit: cover;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+    gap:5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 14vw;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+    flex:1;
+    padding-left: 14vw;
+    box-shadow: 1px 2px 1px 1px rgba(1,1,1,0.05);
+    background-color: white;
+    height: 5%;
+    width: 85vw;
+}
+
+header :first-child{
+    width: 15%;
+    margin-left: auto;
+}
+#pageTitle {
+    font-size: 18px;
+    font-weight: 800;
+    height: 5%;
+    width: 15%;
+
+}
+
+#darkMode{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 8px;
+    padding-right: 17vw;
+    justify-content: center;
+    align-items: center;
+}
+#moonIcon{
+    display: flex;
+    position: relative;
+    height: 15px;
+    width: 15px;
+
+}
+#searchBar{
+    display: flex;
+    flex-direction: row;
+    gap: 240px;
+    top: 15px;
+    margin-top: 25px;
+    position: relative;
+
+}
+#search{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 50px;
+    width: 400px;
+    font-size: 14px;
+    color: #858585;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px rgba(1,1,1,0.03);
+}
+#searchIcon{
+    max-height: 15px;
+    max-width: 15px;
+    padding-top: 17px;
+    vertical-align: center;
+    align-items: start;
+    margin-left: 2rem;
+}
+#search p{
+    padding-left: 15px;
+}
+#filter{
+    font-size: 14px;
+}
+section {
+    display: flex;
+
+}
+
+.flag{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    margin-top: 55px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(1,1,1,0.04);
+
+}
+.info{
+    position: relative;
+    padding-left: 20px;
+    top: 12px;
+    font-size: 12px;
+    bottom: 35px;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+
+.country{
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+    height: 120px;
+    width: 210px;
+
+}
+
+.grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 7%;
+    row-gap: 15px;
+    grid-column: auto;
+    grid-row: auto;
+    margin-bottom: 70px;
+}
+
+
+
+.info p{
+    display: block;
+    position: relative;
+    padding-bottom: 1px;
+}
+.countryName{
+    position: relative;
+    top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+    html body{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+        width: 100%;
+    }
+    header{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-count: 2;
+        flex:1;
+        box-shadow: 1px 2px 1px 1px rgba(1,1,1,0.05);
+        background-color: white;
+        width: 100%;
+
+
+    }
+    main{
+
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        place-items: start;
+
+
+    }
+    #pageTitle{
+        display: flex;
+        flex-direction: row;
+        font-size: 3vw;
+        width: 30vw;
+        padding-left: 2vw;
+
+    }
+    #darkMode{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        font-size: 3vw;
+        padding-right: 25vw;
+        right: 4vw;
+    }
+    #moonIcon{
+        display: flex;
+        position: relative;
+        height: 10px;
+        width: 10px;
+
+    }
+    #searchBar{
+        display: flex;
+        flex-direction: column;
+        flex:3;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        gap: 30vw;
+        width: 15vw;
+        right: 8vw;
+
+    }
+    #search{
+        position: relative;
+        display: flex;
+        margin: 0;
+        margin-top: 5px;
+        width: 65vw;
+        height: 10vw;
+        align-items: center;
+        padding-right: 4vw;
+        font-size: 2.5vw;
+        text-align-all: center;
+        justify-content: left;
+
+    }
+    #searchIcon{
+        position: relative;
+        text-align-all: center;
+        bottom: 2vw;
+    }
+    .grid
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        gap: 5px;
+        align-items: start;
+        bottom: 45vw;
+
+
+    }
+    .country {
+        float: left;
+        min-width:  100px;
+        min-height: 100px;
+        object-fit: cover;
+    }
+    .flag{
+        justify-content: left;
+        align-items: start;
+    }
+
+
+}
